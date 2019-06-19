@@ -1,11 +1,6 @@
 <div class="hc-nav">				
+  <p>Click the yellow button to contact support</p>
   {{ portal | helpcenter_navigation }}
-  <div class="bux-phone"> 
-    <a href="tel:+49 305 6837 3736" class="bux-phone-link">
-      <span>+49 305 6837 3736</span>
-    </a>
-  </div>
-  <p>Click the green button to contact support</p>
 </div>
 {% if portal.has_solutions %}
 <section class="main content rounded-6 min-height-on-desktop" id="solutions-index-home">
@@ -69,13 +64,5 @@
   {% else %}
   {{ portal | filler_for_forums }}
   {% endif %}
-</section>
-{% else %}
-<section class="sidebar simplecontacts"> 
-  <div class="hc-nav {% if portal.contact_info %} nav-with-contact {% endif %}">				
-    {{ portal | helpcenter_navigation }}
-  </div>
-  <div class="mobile-icon-nav-status check-status ellipsis"></div>  
-  <p>To contact support, click on the green button above.<br/><br/></p>
 </section>
 {% endif %}

@@ -20,21 +20,7 @@
     Centro de Ayuda
     {% endif %}
   </h2>
-  
-  {% if portal.current_language.code == "en" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-EN-EUR-support-2017.png">
-  {% elsif portal.current_language.code == "nl" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-NL-support-2017.png">
-  {% elsif portal.current_language.code == "fr" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-FR-support-2017.png">
-  {% elsif portal.current_language.code == "de" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-DE-support-2017.png">
-  {% elsif portal.current_language.code == "it" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-IT-support-2017.png">
-  {% elsif portal.current_language.code == "es" %}
-    <img src="https://s3.eu-central-1.amazonaws.com/bux-supportsite-content/Phones-ES-support-2017.png">
-  {% endif %}
-  
+ 
 </div>
 <div class="searchbox">
   <div class="page">  
@@ -45,19 +31,34 @@
         <div class="head-txt">
           <h2>
             {% if portal.current_language.code == "en" %}
-            Support Center
+            BUX X Support Center
             {% elsif portal.current_language.code == "nl" %}
-            Support Centrum
+            BUX X Support Centrum
             {% elsif portal.current_language.code == "fr" %}
-            Centre de Support
+            BUX X Centre de Support
             {% elsif portal.current_language.code == "de" %}
-            Support-Center
+            BUX X Support-Center
             {% elsif portal.current_language.code == "it" %}
-            Centro Assistenza
+            BUX X Centro Assistenza
             {% elsif portal.current_language.code == "es" %}
-            Centro de Ayuda
+            BUX X Centro de Ayuda
             {% endif %}
           </h2>
+          <p class="message">
+            {% if portal.current_language.code == "en" %}
+              <em>Hello,<br>How can we</em> help you?
+            {% elsif portal.current_language.code == "nl" %}
+              <em>Hallo,<br>Hoe kunnen wij</em> je helpen?
+            {% elsif portal.current_language.code == "fr" %}
+              <em>Bonjour,<br>Comment peut-on</em> t'aider?
+            {% elsif portal.current_language.code == "de" %}
+              <em>Hallo,<br>Wie können wir</em> dir weiterhelfen?
+            {% elsif portal.current_language.code == "it" %}
+              <em>Ciao,<br>come posso</em> aiutarti?
+            {% elsif portal.current_language.code == "es" %}
+              <em>¡Hola!<br> ¿Cómo podemos</em> ayudarte?
+            {% endif %}
+          </p>
         </div>
         <div class="hc-search-c">
           <h2 class="heading hide-in-mobile">Support Center<!--{% translate header.help_center %} !--></h2>
